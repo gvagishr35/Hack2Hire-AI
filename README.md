@@ -176,11 +176,7 @@ Final Interview Report
 
 ## Live Working Demonstration
 
-Paste your video link here:
-
-```text
-VIDEO_LINK_HERE
-```
+"https://drive.google.com/file/d/1L8tVa2F0zRhvUxVxUXxZecb51pq_PIvb/view?usp=sharing"
 
 ---
 
