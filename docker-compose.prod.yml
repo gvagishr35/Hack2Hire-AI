@@ -1,0 +1,36 @@
+# Production overrides — use: docker compose -f docker-compose.yml -f docker-compose.prod.yml up -d
+name: hack2hire
+
+services:
+  postgres:
+    ports: []
+    restart: always
+    deploy:
+      resources:
+        limits:
+          cpus: "1.0"
+          memory: 1G
+
+  redis:
+    ports: []
+    restart: always
+    deploy:
+      resources:
+        limits:
+          cpus: "0.5"
+          memory: 512M
+
+  api:
+    environment:
+      ENVIRONMENT: production
+      DEBUG: "false"
+      UVICORN_WORKERS: ${UVICORN_WORKERS:-2}
+    restart: always
+    deploy:
+      resources:
+        limits:
+          cpus: "2.0"
+          memory: 1G
+        reservations:
+          cpus: "0.5"
+          memory: 256M
