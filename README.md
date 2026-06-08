@@ -172,14 +172,6 @@ Final Interview Report
 
 ---
 
-# 🎥 Demo Video
-
-## Live Working Demonstration
-
-"https://drive.google.com/file/d/1L8tVa2F0zRhvUxVxUXxZecb51pq_PIvb/view?usp=sharing"
-
----
-
 # ⚙️ Local Setup
 
 ## Clone Repository
